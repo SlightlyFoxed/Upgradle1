@@ -4,6 +4,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
@@ -20,9 +21,9 @@ public class Autorization {
         Configuration.pageLoadStrategy = "eager";
         //Configuration.holdBrowserOpen = true;
     }
-    @AfterEach
-    public void tearDown() {
-        Selenide.closeWebDriver();
+    @BeforeEach
+    static void turnOff (){
+
     }
 
     @Test
