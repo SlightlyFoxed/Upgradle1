@@ -23,6 +23,7 @@ public class Autorization {
     }
     @BeforeEach
     static void turnOff (){
+        Configuration.browserSize = "";
 
     }
 
