@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
@@ -13,6 +14,10 @@ public class SearchTests {
     static void beforeAll() {
         Configuration.pageLoadStrategy = "eager";
         Configuration.browser = "firefox";
+    }
+    @BeforeEach
+    static void turnOff(){
+
     }
 
     @Test
