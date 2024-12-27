@@ -22,7 +22,10 @@ public class Autorization {
     }
     @AfterEach
     public void tearDown() {
+        
         Selenide.closeWebDriver();
+        Selenide.closeWebDriver();
+        
     }
 
     @Test
