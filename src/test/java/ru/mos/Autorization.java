@@ -25,6 +25,7 @@ public class Autorization {
         
         Selenide.closeWebDriver();
         Selenide.closeWebDriver();
+        Selenide.closeWebDriver();
         
     }
 
