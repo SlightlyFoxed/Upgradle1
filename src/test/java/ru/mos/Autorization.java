@@ -20,6 +20,10 @@ public class Autorization {
         Configuration.pageLoadStrategy = "eager";
         //Configuration.holdBrowserOpen = true;
     }
+    @AfterEach
+    public void tearDown() {
+        Selenide.closeWebDriver();
+    }
 
     @Test
     void userAutorisation() {
