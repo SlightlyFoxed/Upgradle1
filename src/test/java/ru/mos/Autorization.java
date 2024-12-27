@@ -1,6 +1,8 @@
 package ru.mos;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -19,9 +21,9 @@ public class Autorization {
         Configuration.pageLoadStrategy = "eager";
         //Configuration.holdBrowserOpen = true;
     }
-    @BeforeEach
-    static void turnOff (){
-        Configuration.browserSize = "345234";
+    @AfterEach
+    public void tearDown() {
+        Selenide.closeWebDriver();
 
     }
 
