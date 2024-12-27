@@ -15,10 +15,6 @@ public class SearchTests {
         Configuration.pageLoadStrategy = "eager";
         Configuration.browser = "firefox";
     }
-    @BeforeEach
-    static void turnOff(){
-
-    }
 
     @Test
     void successfulSearchTest() {
